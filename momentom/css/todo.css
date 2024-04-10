@@ -1,0 +1,76 @@
+.todo__container {
+  position: absolute;
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.todo__container input {
+  text-align: center;
+}
+
+.todo__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.todo__list {
+  margin-top: 2rem;
+  max-height: 7rem;
+  height: 100%;
+  overflow-y: scroll; /* 중복된 속성 수정 */
+}
+
+.todo__list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.todo__list::-webkit-scrollbar-thumb {
+  /* 오타 수정 */
+  background: rgba(255, 255, 255, 0.3); /* CSS rgba 함수 사용 */
+  border-radius: 20px;
+}
+
+.todo__list li {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  animation: showTodoList 1s ease-out forwards;
+}
+
+.todo__list li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@keyframes showTodoList {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.todo__list span {
+  display: inline-block;
+  max-width: 80%;
+  text-align: left;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.todo__list button {
+  transition: opacity 300ms;
+  opacity: 0.7; /* 퍼센트 값을 소수로 수정 */
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
+
+.todo__list button:hover {
+  opacity: 1;
+}

@@ -1,0 +1,22 @@
+.weather__container {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  text-shadow: var(--text-shadow);
+  background-color: rgba(255, 255, 255, 0.5); /* 반투명한 배경 추가 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  padding: 0.5rem; /* 내부 여백 추가 */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* 경계선 추가 */
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+}
+
+.weather__location {
+  font-size: 0.75rem;
+  opacity: 0.8; /* 표준에 맞게 조정 */
+  text-align: right;
+  padding-right: 0.125rem;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <title>Paige's Momentom</title>
+    <meta name="description" content="momentom" />
+    <meta name="author" content="Paige Park" />
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="src/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <!-- Weather -->
+    <div class="weather__container" aria-label="Weather Information">
+      <div class="weather">
+        <div class="weather__temperature"></div>
+      </div>
+      <div class="weather__location"></div>
+    </div>
+
+    <!-- Main -->
+    <div class="main__container">
+      <!-- Time & Greeting -->
+      <section class="time__container" aria-label="Time and Greeting">
+        <span class="time"></span>
+        <div class="greeting">
+          <form class="greeting__form form">
+            <input
+              class="greeting__input"
+              type="text"
+              placeholder="What's your name?"
+            />
+          </form>
+          <p class="greeting__message greetings">Hi, Paige!</p>
+        </div>
+      </section>
+
+      <!-- Todo -->
+      <section class="todo__container todos" aria-label="Daily To-do List">
+        <p class="todo__title">Todo of the Day</p>
+        <form class="todo__form">
+          <input class="todo__input" type="text" placeholder="Add new todo" />
+        </form>
+        <ul class="todo__list">
+          <li>breath</li>
+          <li>eat</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Quote -->
+    <div class="quote__container" aria-label="Daily Quote">
+      <p class="quote">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      </p>
+      <div class="quote__author">Paige Park</div>
+    </div>
+
+    <div class="dimmer"></div>
+  </body>
+</html>

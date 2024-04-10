@@ -1,0 +1,33 @@
+.greeting {
+  font-size: 3rem;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+
+.greeting__form input[type="text"] {
+  opacity: 100%;
+  text-align: center;
+}
+
+.greeting input::placeholder {
+  font-size: 2rem;
+  opacity: 100%;
+  text-align: center;
+  color: white;
+}
+
+.greeting__message {
+  animation: showGreetings 1s ease-out forwards;
+}
+
+@keyframes showGreetings {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
